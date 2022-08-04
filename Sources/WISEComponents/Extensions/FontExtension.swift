@@ -39,6 +39,11 @@ public extension UIFont.TextStyle {
 }
 
 public extension UIFont {
+    private static func custom(_ font: Inter, relativeTo style: UIFont.TextStyle) -> UIFont {
+        UIFont(name: font.rawValue, size: style.size) ?? UIFont.systemFont(ofSize: style.size)
+    }
+    
     static let heading1 = UIFont(name: Inter.bold.rawValue, size: UIFont.TextStyle.largeTitle.size)
+    static let heading2 = custom(.bold, relativeTo: .title1)
     static let subText = UIFont(name: Inter.light.rawValue, size: UIFont.TextStyle.footnote.size)
 }
