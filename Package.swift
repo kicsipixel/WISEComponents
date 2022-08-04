@@ -22,7 +22,9 @@ let package = Package(
         .target(
             name: "WISEComponents",
             dependencies: [],
-            resources: [.process("Fonts")]),
+            resources: [.process("Fonts"),
+                        .process("Resource/Media.xcassets")
+                       ]),
         .testTarget(
             name: "WISEComponentsTests",
             dependencies: ["WISEComponents"])
