@@ -45,7 +45,7 @@ public extension UIFont {
     private static func custom(_ font: Inter, relativeTo style: UIFont.TextStyle) -> UIFont {
         UIFont(name: font.rawValue, size: style.size) ?? UIFont.systemFont(ofSize: style.size)
     }
-    
+
     /// Naming is identical as shown in Figma
     static let heading1 = custom(.bold, relativeTo: .largeTitle)
     static let heading2 = custom(.bold, relativeTo: .title1)
