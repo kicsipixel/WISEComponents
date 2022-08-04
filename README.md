@@ -13,7 +13,7 @@ With the help of autocompletion all colors can be found quite easily and can be 
 
 **Available colors are:**
 
-- <img src="images/OxfordBlue.png" width="25" /> `.applicationOxfordBlue`           with HEX of `#11224D`
+- <img src="images/OxfordBlue.png" width="50" /> `.applicationOxfordBlue`           with HEX of `#11224D`
 - <img src="images/Glaucous.png" width="25" /> `.applicationGlaucous`               with HEX of `#5B84C4`
 - <img src="images/Rhythm.png" width="25" /> `.applicationRhythm`               with HEX of `#687086`
 - <img src="images/AtomicTangerine.png" width="25" /> `.applicationAtomicTangerine`       with HEX of `#F79653`
