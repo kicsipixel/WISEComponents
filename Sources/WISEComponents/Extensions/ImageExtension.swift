@@ -15,11 +15,22 @@ import UIKit
 
 /// Custom icons from Figma
 public extension UIImage {
-    static let applicationIconArrow = UIImage(named: "icon_arrow", in: .module, with: nil)
-    static let applicationIconArrowDisabled = UIImage(named: "icon_arrow", in: .module, with: nil)?.alpha(0.4)
-    static let applicationIconAdd = CustomIcons.imageOfIcon_add
-    static let applicationIconAddGlaucous = CustomIcons.imageOfIcon_add.withTintColor(.applicationGlaucous, renderingMode: .alwaysOriginal)
-    
+    /// .icon_add
+    static let applicationIconAdd = CustomIcons.imageOfIconAdd
+    static let applicationIconAddActive = CustomIcons.imageOfIconAdd.withTintColor(.applicationOxfordBlueHiglighted, renderingMode: .alwaysOriginal)
+    static let applicationIconAddDisabled = CustomIcons.imageOfIconAdd.alpha(0.4)
+    static let applicationIconAddKO = CustomIcons.imageOfIconAdd.withTintColor(.white, renderingMode: .alwaysOriginal)
+    static let applicationIconAddKOGlaucous = CustomIcons.imageOfIconAdd.withTintColor(.applicationGlaucous, renderingMode: .alwaysOriginal)
+    static let applicationIconAddKODisabled = CustomIcons.imageOfIconAdd.withTintColor(.white, renderingMode: .alwaysOriginal).alpha(0.4)
+
+    /// .icon_arrow
+    static let applicationIconArrow = CustomIcons.imageOfIconArrow
+    static let applicationIconArrowActive = CustomIcons.imageOfIconArrow.withTintColor(.applicationOxfordBlueHiglighted, renderingMode: .alwaysOriginal)
+    static let applicationIconArrowDisabled = CustomIcons.imageOfIconArrow.alpha(0.4)
+    static let applicationIconArrowKO = CustomIcons.imageOfIconArrow.withTintColor(.white, renderingMode: .alwaysOriginal)
+    static let applicationIconArrowKOGlaucous = CustomIcons.imageOfIconArrow.withTintColor(.applicationGlaucous, renderingMode: .alwaysOriginal)
+    static let applicationIconArrowKODisabled = CustomIcons.imageOfIconArrow.withTintColor(.white, renderingMode: .alwaysOriginal).alpha(0.4)
+
     private func alpha(_ alpha: CGFloat) -> UIImage {
         return UIGraphicsImageRenderer(size: size).image { _ in
             draw(at: .zero, blendMode: .normal, alpha: alpha)
