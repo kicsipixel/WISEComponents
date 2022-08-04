@@ -17,6 +17,8 @@ import UIKit
 public extension UIImage {
     static let applicationIconArrow = UIImage(named: "icon_arrow", in: .module, with: nil)
     static let applicationIconArrowDisabled = UIImage(named: "icon_arrow", in: .module, with: nil)?.alpha(0.4)
+    static let applicationIconAdd = CustomIcons.imageOfIcon_add
+    static let applicationIconAddGlaucous = CustomIcons.imageOfIcon_add.withTintColor(.applicationGlaucous, renderingMode: .alwaysOriginal)
     
     private func alpha(_ alpha: CGFloat) -> UIImage {
         return UIGraphicsImageRenderer(size: size).image { _ in
