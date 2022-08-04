@@ -40,4 +40,5 @@ public extension UIFont.TextStyle {
 
 public extension UIFont {
     static let heading1 = UIFont(name: Inter.bold.rawValue, size: UIFont.TextStyle.largeTitle.size)
+    static let subText = UIFont(name: Inter.light.rawValue, size: UIFont.TextStyle.footnote.size)
 }
