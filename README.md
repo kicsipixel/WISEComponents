@@ -26,5 +26,13 @@ With the help of autocompletion all colors can be found quite easily and can be 
 
 **Usage:**
 ```swift
-view.backgroundColor = .applicationOxfordBlue
+import WISEComponents
+
+init() {
+    WISEComponents.registerFonts()
+}
+
+override func viewDidLoad() {
+    view.backgroundColor = .applicationOxfordBlue
+}
 ```
