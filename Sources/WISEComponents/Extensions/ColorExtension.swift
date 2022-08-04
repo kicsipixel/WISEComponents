@@ -1,15 +1,15 @@
 /*
-     File: ColorExtension.swift
-     Abstract: Custom colors for the application
-  
-     Version: 1.0
-
-     IMPORTANT: You are not allowed to copy any portion of this code or redistribute with or without modifications.
-     
-     Created by Szabolcs Toth (tsz@purzelbaum.hu) on 03.08.2022.
-     Copyright (C) 2022 WISE Cities, LLC., https://www.wisecities.us. All Rights Reserved.
-  
-*/
+ File: ColorExtension.swift
+ Abstract: Custom colors for the application
+ 
+ Version: 1.0
+ 
+ IMPORTANT: You are not allowed to copy any portion of this code or redistribute with or without modifications.
+ 
+ Created by Szabolcs Toth (tsz@purzelbaum.hu) on 03.08.2022.
+ Copyright (C) 2022 WISE Cities, LLC., https://www.wisecities.us. All Rights Reserved.
+ 
+ */
 
 import UIKit
 
