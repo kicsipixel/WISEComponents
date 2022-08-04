@@ -21,7 +21,6 @@ public enum Inter: String, CaseIterable {
     case medium = "Inter-Medium"
     case regular = "Inter-Regular"
     case light = "Inter-Light"
-    case thin = "Inter-Thin"
 }
 
 /// Different font sizes

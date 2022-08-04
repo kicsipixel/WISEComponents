@@ -11,7 +11,7 @@ Following the naming convention of `UIColor.systemMint` we define the applicatio
 
 With the help of autocompletion all colors can be found quite easily and can be avoid mistyping. 
 
-**Available colors are:**
+**Available colors:**
 
 - <img src="images/OxfordBlue.png" width="35" /> `.applicationOxfordBlue`           with HEX of `#11224D`
 - <img src="images/OxfordBlueHighlighted.png" width="35" /> `.applicationOxfordBlueHighligted`           with HEX of `#0A132C`
@@ -28,11 +28,37 @@ With the help of autocompletion all colors can be found quite easily and can be 
 ```swift
 import WISEComponents
 
+override func viewDidLoad() {
+    view.backgroundColor = .applicationOxfordBlue
+}
+```
+
+## Fonts
+Custom font for the application is `Inter`.
+
+<img src="images/fonts.png" height="400" />
+
+
+**Available Type layouts:**
+- `heading1`: Inter Bold - 60px
+- `heading2`: Inter Bold - 48px
+- `heading3`: Inter Bold - 36px
+- `heading4`: Inter Semi Bold - 24px
+- `heading5`: Inter Medium - 20px
+- `body`: Inter Regular - 20px
+- `subText`: Inter Light - 18px
+
+**Usage:**
+
+```swift
+import WISEComponents
+
 init() {
     WISEComponents.registerFonts()
 }
 
 override func viewDidLoad() {
-    view.backgroundColor = .applicationOxfordBlue
+    let label = UILabel()
+    label.font = .heading1
 }
 ```
