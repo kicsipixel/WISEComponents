@@ -20,7 +20,7 @@ public extension UIImage {
     static let applicationIconAddActive = CustomIcons.imageOfIconAdd.withTintColor(.applicationOxfordBlueHiglighted, renderingMode: .alwaysOriginal)
     static let applicationIconAddDisabled = CustomIcons.imageOfIconAdd.alpha(0.4)
     static let applicationIconAddKO = CustomIcons.imageOfIconAdd.withTintColor(.white, renderingMode: .alwaysOriginal)
-    static let applicationIconAddKOGlaucous = CustomIcons.imageOfIconAdd.withTintColor(.applicationGlaucous, renderingMode: .alwaysOriginal)
+    static let applicationIconAddKOActive = CustomIcons.imageOfIconAdd.withTintColor(.applicationGlaucous, renderingMode: .alwaysOriginal)
     static let applicationIconAddKODisabled = CustomIcons.imageOfIconAdd.withTintColor(.white, renderingMode: .alwaysOriginal).alpha(0.4)
 
     /// .icon_arrow
@@ -28,8 +28,16 @@ public extension UIImage {
     static let applicationIconArrowActive = CustomIcons.imageOfIconArrow.withTintColor(.applicationOxfordBlueHiglighted, renderingMode: .alwaysOriginal)
     static let applicationIconArrowDisabled = CustomIcons.imageOfIconArrow.alpha(0.4)
     static let applicationIconArrowKO = CustomIcons.imageOfIconArrow.withTintColor(.white, renderingMode: .alwaysOriginal)
-    static let applicationIconArrowKOGlaucous = CustomIcons.imageOfIconArrow.withTintColor(.applicationGlaucous, renderingMode: .alwaysOriginal)
+    static let applicationIconArrowKOActive = CustomIcons.imageOfIconArrow.withTintColor(.applicationGlaucous, renderingMode: .alwaysOriginal)
     static let applicationIconArrowKODisabled = CustomIcons.imageOfIconArrow.withTintColor(.white, renderingMode: .alwaysOriginal).alpha(0.4)
+
+    /// .icon_calendar
+    static let applicationIconCalendar = CustomIcons.imageOfIconCalendar
+    static let applicationIconCalendarActive = CustomIcons.imageOfIconCalendar.withTintColor(.applicationOxfordBlueHiglighted, renderingMode: .alwaysOriginal)
+    static let applicationIconCalendarDisabled = CustomIcons.imageOfIconCalendar.alpha(0.4)
+    static let applicationIconCalendarKO = CustomIcons.imageOfIconCalendar.withTintColor(.white, renderingMode: .alwaysOriginal)
+    static let applicationIconCalendarOActive = CustomIcons.imageOfIconCalendar.withTintColor(.applicationGlaucous, renderingMode: .alwaysOriginal)
+    static let applicationIconCalendarKODisabled = CustomIcons.imageOfIconCalendar.withTintColor(.white, renderingMode: .alwaysOriginal).alpha(0.4)
 
     private func alpha(_ alpha: CGFloat) -> UIImage {
         return UIGraphicsImageRenderer(size: size).image { _ in
