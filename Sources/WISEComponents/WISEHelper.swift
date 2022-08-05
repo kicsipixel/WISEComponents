@@ -25,7 +25,7 @@ import UIKit
  
  */
 func addWISECustomBackButton(navigationController: UINavigationController?, navigationItem: UINavigationItem?, buttonColor: UIColor = .white) {
-    let backButtonImage = UIBarButtonItem(image: UIImage(named: "iconBack")?.withTintColor(buttonColor).withRenderingMode(.alwaysOriginal),
+    let backButtonImage = UIBarButtonItem(image: UIImage.iconBack?.withTintColor(buttonColor).withRenderingMode(.alwaysOriginal),
                                           style: .plain, target: navigationController,
                                           action: #selector(UINavigationController.popViewController(animated:)))
     backButtonImage.imageInsets = .init(top: 0, left: -6, bottom: 0, right: 0)

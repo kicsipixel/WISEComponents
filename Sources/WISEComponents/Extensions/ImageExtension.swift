@@ -15,6 +15,8 @@ import UIKit
 
 /// Custom icons from Figma
 public extension UIImage {
+    static let iconBack = UIImage(named: "iconBack", in: .module, with: nil)
+    
     /// .icon_add
     static let applicationIconAdd = CustomIcons.imageOfIconAdd
     static let applicationIconAddActive = CustomIcons.imageOfIconAdd.withTintColor(.applicationOxfordBlueHiglighted, renderingMode: .alwaysOriginal)
