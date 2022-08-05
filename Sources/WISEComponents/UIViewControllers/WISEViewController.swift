@@ -13,15 +13,15 @@
 
 import UIKit
 
-public class WISEViewController: UIViewController {
+open class WISEViewController: UIViewController {
     var backButtonColor: UIColor { .applicationOxfordBlue }
     var showBackButton: Bool { true }
 
-    public override var preferredStatusBarStyle: UIStatusBarStyle {
+    open override var preferredStatusBarStyle: UIStatusBarStyle {
         return (backButtonColor == .applicationOxfordBlue) ? .darkContent : .lightContent
     }
 
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
 
         if showBackButton, self != navigationController?.viewControllers.first {
@@ -34,7 +34,7 @@ public class WISEViewController: UIViewController {
     }
 }
 
-public class WISENavigationController: UINavigationController {
+open class WISENavigationController: UINavigationController {
     public override var preferredStatusBarStyle: UIStatusBarStyle {
         return topViewController?.preferredStatusBarStyle ?? .lightContent
     }
