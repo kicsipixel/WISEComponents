@@ -65,6 +65,7 @@ override func viewDidLoad() {
 
 ## Icons
 Custom icons for the application.
+<img src="images/icons.png" />
 
 **Available icons:**
 <br />
@@ -98,7 +99,7 @@ Custom icons for the application.
 - `.applicationIconCalendarKODisabled`
  
  <img src="images/icon_check.png" />
- 
+
 - `.applicationIconCheck`
 - `.applicationIconCheckActive`
 - `.applicationIconCheckDisabled`
@@ -126,3 +127,7 @@ Custom icons for the application.
 - `.applicationIconEditKODisabled`
  
 
+**Usage:**
+```swift
+imageView.image = .applicationIconEdit
+```
