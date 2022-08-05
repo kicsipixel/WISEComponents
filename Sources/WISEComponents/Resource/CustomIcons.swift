@@ -9,11 +9,9 @@
 //  http://www.paintcodeapp.com
 //
 
-
-
 import UIKit
 
-public class CustomIcons : NSObject {
+public class CustomIcons: NSObject {
 
     //// Cache
 
@@ -37,13 +35,12 @@ public class CustomIcons : NSObject {
     @objc dynamic public class func drawIconAdd(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 35, height: 35), resizing: ResizingBehavior = .aspectFit) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-        
+
         //// Resize to Target Frame
         context.saveGState()
         let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 35, height: 35), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         context.scaleBy(x: resizedFrame.width / 35, y: resizedFrame.height / 35)
-
 
         //// Color Declarations
         let strokeColor = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
@@ -76,7 +73,7 @@ public class CustomIcons : NSObject {
         bezierPath.lineCapStyle = .round
         bezierPath.lineJoinStyle = .round
         bezierPath.stroke()
-        
+
         context.restoreGState()
 
     }
@@ -84,13 +81,12 @@ public class CustomIcons : NSObject {
     @objc dynamic public class func drawIconArrow(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 32, height: 32), resizing: ResizingBehavior = .aspectFit) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-        
+
         //// Resize to Target Frame
         context.saveGState()
         let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 32, height: 32), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         context.scaleBy(x: resizedFrame.width / 32, y: resizedFrame.height / 32)
-
 
         //// Color Declarations
         let strokeColor = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
@@ -120,7 +116,7 @@ public class CustomIcons : NSObject {
         bezierPath.lineCapStyle = .round
         bezierPath.lineJoinStyle = .round
         bezierPath.stroke()
-        
+
         context.restoreGState()
 
     }
@@ -128,13 +124,12 @@ public class CustomIcons : NSObject {
     @objc dynamic public class func drawIconCalendar(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 32, height: 32), resizing: ResizingBehavior = .aspectFit) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-        
+
         //// Resize to Target Frame
         context.saveGState()
         let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 32, height: 32), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         context.scaleBy(x: resizedFrame.width / 32, y: resizedFrame.height / 32)
-
 
         //// Color Declarations
         let strokeColor = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
@@ -147,7 +142,6 @@ public class CustomIcons : NSObject {
         //// Clip Rectangle
         let rectanglePath = UIBezierPath(rect: CGRect(x: 2.03, y: 2, width: 27.35, height: 28))
         rectanglePath.addClip()
-
 
         //// Bezier Drawing
         let bezierPath = UIBezierPath()
@@ -164,7 +158,6 @@ public class CustomIcons : NSObject {
         bezierPath.lineCapStyle = .round
         bezierPath.lineJoinStyle = .round
         bezierPath.stroke()
-
 
         //// Bezier 2 Drawing
         let bezier2Path = UIBezierPath()
@@ -194,7 +187,6 @@ public class CustomIcons : NSObject {
         bezier2Path.lineJoinStyle = .round
         bezier2Path.stroke()
 
-
         //// Bezier 3 Drawing
         let bezier3Path = UIBezierPath()
         bezier3Path.move(to: CGPoint(x: 23.13, y: 25.56))
@@ -215,10 +207,9 @@ public class CustomIcons : NSObject {
         bezier3Path.lineJoinStyle = .round
         bezier3Path.stroke()
 
-
         context.endTransparencyLayer()
         context.restoreGState()
-        
+
         context.restoreGState()
 
     }
@@ -226,13 +217,12 @@ public class CustomIcons : NSObject {
     @objc dynamic public class func drawIconCheck(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 32, height: 32), resizing: ResizingBehavior = .aspectFit) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-        
+
         //// Resize to Target Frame
         context.saveGState()
         let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 32, height: 32), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         context.scaleBy(x: resizedFrame.width / 32, y: resizedFrame.height / 32)
-
 
         //// Color Declarations
         let strokeColor = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
@@ -261,7 +251,7 @@ public class CustomIcons : NSObject {
         bezierPath.lineCapStyle = .round
         bezierPath.lineJoinStyle = .round
         bezierPath.stroke()
-        
+
         context.restoreGState()
 
     }
@@ -269,13 +259,12 @@ public class CustomIcons : NSObject {
     @objc dynamic public class func drawIconClose(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 32, height: 32), resizing: ResizingBehavior = .aspectFit) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-        
+
         //// Resize to Target Frame
         context.saveGState()
         let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 32, height: 32), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         context.scaleBy(x: resizedFrame.width / 32, y: resizedFrame.height / 32)
-
 
         //// Color Declarations
         let strokeColor = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
@@ -308,7 +297,7 @@ public class CustomIcons : NSObject {
         bezierPath.lineCapStyle = .round
         bezierPath.lineJoinStyle = .round
         bezierPath.stroke()
-        
+
         context.restoreGState()
 
     }
@@ -316,13 +305,12 @@ public class CustomIcons : NSObject {
     @objc dynamic public class func drawIconEdit(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 32, height: 32), resizing: ResizingBehavior = .aspectFit) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-        
+
         //// Resize to Target Frame
         context.saveGState()
         let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 32, height: 32), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         context.scaleBy(x: resizedFrame.width / 32, y: resizedFrame.height / 32)
-
 
         //// Color Declarations
         let fillColor = UIColor(red: 0.067, green: 0.133, blue: 0.302, alpha: 1.000)
@@ -335,7 +323,6 @@ public class CustomIcons : NSObject {
         //// Clip Rectangle
         let rectanglePath = UIBezierPath(rect: CGRect(x: 3, y: 1, width: 26.8, height: 28.7))
         rectanglePath.addClip()
-
 
         //// Bezier Drawing
         let bezierPath = UIBezierPath()
@@ -353,7 +340,6 @@ public class CustomIcons : NSObject {
         bezierPath.lineWidth = 2
         bezierPath.lineJoinStyle = .round
         bezierPath.stroke()
-
 
         //// Bezier 2 Drawing
         let bezier2Path = UIBezierPath()
@@ -375,10 +361,9 @@ public class CustomIcons : NSObject {
         bezier2Path.lineJoinStyle = .round
         bezier2Path.stroke()
 
-
         context.endTransparencyLayer()
         context.restoreGState()
-        
+
         context.restoreGState()
 
     }
@@ -471,68 +456,65 @@ public class CustomIcons : NSObject {
 
     //// Customization Infrastructure
 
-    @objc @IBOutlet dynamic var iconAddTargets: [AnyObject]! {
+    @IBOutlet dynamic var iconAddTargets: [AnyObject]! {
         get { return Cache.iconAddTargets }
         set {
             Cache.iconAddTargets = newValue
             for target: AnyObject in newValue {
-                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconAdd)
+                _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconAdd)
             }
         }
     }
 
-    @objc @IBOutlet dynamic var iconArrowTargets: [AnyObject]! {
+    @IBOutlet dynamic var iconArrowTargets: [AnyObject]! {
         get { return Cache.iconArrowTargets }
         set {
             Cache.iconArrowTargets = newValue
             for target: AnyObject in newValue {
-                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconArrow)
+                _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconArrow)
             }
         }
     }
 
-    @objc @IBOutlet dynamic var iconCalendarTargets: [AnyObject]! {
+    @IBOutlet dynamic var iconCalendarTargets: [AnyObject]! {
         get { return Cache.iconCalendarTargets }
         set {
             Cache.iconCalendarTargets = newValue
             for target: AnyObject in newValue {
-                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconCalendar)
+                _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconCalendar)
             }
         }
     }
 
-    @objc @IBOutlet dynamic var iconCheckTargets: [AnyObject]! {
+    @IBOutlet dynamic var iconCheckTargets: [AnyObject]! {
         get { return Cache.iconCheckTargets }
         set {
             Cache.iconCheckTargets = newValue
             for target: AnyObject in newValue {
-                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconCheck)
+                _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconCheck)
             }
         }
     }
 
-    @objc @IBOutlet dynamic var iconCloseTargets: [AnyObject]! {
+    @IBOutlet dynamic var iconCloseTargets: [AnyObject]! {
         get { return Cache.iconCloseTargets }
         set {
             Cache.iconCloseTargets = newValue
             for target: AnyObject in newValue {
-                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconClose)
+                _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconClose)
             }
         }
     }
 
-    @objc @IBOutlet dynamic var iconEditTargets: [AnyObject]! {
+    @IBOutlet dynamic var iconEditTargets: [AnyObject]! {
         get { return Cache.iconEditTargets }
         set {
             Cache.iconEditTargets = newValue
             for target: AnyObject in newValue {
-                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconEdit)
+                _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconEdit)
             }
         }
     }
-
-
-
 
     @objc(CustomIconsResizingBehavior)
     public enum ResizingBehavior: Int {
