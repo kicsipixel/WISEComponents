@@ -15,7 +15,8 @@ import UIKit
 
 /// Custom icons from Figma
 public extension UIImage {
-    static let iconBack = UIImage(named: "iconBack", in: .module, with: nil)
+    /// .icon_back_button for navigation
+    static let navigationIconBack = CustomIcons.imageOfIconBackButton
     
     /// .icon_add
     static let applicationIconAdd = CustomIcons.imageOfIconAdd
