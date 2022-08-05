@@ -13,7 +13,7 @@
 
 import UIKit
 
-class WISEViewController: UIViewController {
+public class WISEViewController: UIViewController {
     var backButtonColor: UIColor { .applicationOxfordBlue }
     var showBackButton: Bool { true }
 
@@ -34,7 +34,7 @@ class WISEViewController: UIViewController {
     }
 }
 
-class WISENavigationController: UINavigationController {
+public class WISENavigationController: UINavigationController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return topViewController?.preferredStatusBarStyle ?? .lightContent
     }
