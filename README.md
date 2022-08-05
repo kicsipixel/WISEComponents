@@ -97,3 +97,32 @@ Custom icons for the application.
 - `.applicationIconCalendarKOActive`
 - `.applicationIconCalendarKODisabled`
  
+ <img src="images/icon_check.png" />
+ 
+- `.applicationIconCheck`
+- `.applicationIconCheckActive`
+- `.applicationIconCheckDisabled`
+- `.applicationIconCheckKO`
+- `.applicationIconCheckKOActive`
+- `.applicationIconCheckKODisabled`
+
+ 
+ <img src="images/icon_close.png" />
+
+- `.applicationIconClose`
+- `.applicationIconCloseActive`
+- `.applicationIconCloseDisabled`
+- `.applicationIconCloseKO`
+- `.applicationIconCloseKOActive`
+- `.applicationIconCloseKODisabled`
+ 
+ <img src="images/icon_edit.png" />
+
+- `.applicationIconEdit`
+- `.applicationIconEditActive`
+- `.applicationIconEditDisabled`
+- `.applicationIconEditKO`
+- `.applicationIconEditKOActive`
+- `.applicationIconEditKODisabled`
+ 
+

@@ -9,9 +9,11 @@
 //  http://www.paintcodeapp.com
 //
 
+
+
 import UIKit
 
-public class CustomIcons: NSObject {
+public class CustomIcons : NSObject {
 
     //// Cache
 
@@ -22,6 +24,12 @@ public class CustomIcons: NSObject {
         static var iconArrowTargets: [AnyObject]?
         static var imageOfIconCalendar: UIImage?
         static var iconCalendarTargets: [AnyObject]?
+        static var imageOfIconCheck: UIImage?
+        static var iconCheckTargets: [AnyObject]?
+        static var imageOfIconClose: UIImage?
+        static var iconCloseTargets: [AnyObject]?
+        static var imageOfIconEdit: UIImage?
+        static var iconEditTargets: [AnyObject]?
     }
 
     //// Drawing Methods
@@ -29,12 +37,13 @@ public class CustomIcons: NSObject {
     @objc dynamic public class func drawIconAdd(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 35, height: 35), resizing: ResizingBehavior = .aspectFit) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-
+        
         //// Resize to Target Frame
         context.saveGState()
         let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 35, height: 35), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         context.scaleBy(x: resizedFrame.width / 35, y: resizedFrame.height / 35)
+
 
         //// Color Declarations
         let strokeColor = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
@@ -67,7 +76,7 @@ public class CustomIcons: NSObject {
         bezierPath.lineCapStyle = .round
         bezierPath.lineJoinStyle = .round
         bezierPath.stroke()
-
+        
         context.restoreGState()
 
     }
@@ -75,12 +84,13 @@ public class CustomIcons: NSObject {
     @objc dynamic public class func drawIconArrow(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 32, height: 32), resizing: ResizingBehavior = .aspectFit) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-
+        
         //// Resize to Target Frame
         context.saveGState()
         let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 32, height: 32), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         context.scaleBy(x: resizedFrame.width / 32, y: resizedFrame.height / 32)
+
 
         //// Color Declarations
         let strokeColor = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
@@ -110,7 +120,7 @@ public class CustomIcons: NSObject {
         bezierPath.lineCapStyle = .round
         bezierPath.lineJoinStyle = .round
         bezierPath.stroke()
-
+        
         context.restoreGState()
 
     }
@@ -118,12 +128,13 @@ public class CustomIcons: NSObject {
     @objc dynamic public class func drawIconCalendar(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 32, height: 32), resizing: ResizingBehavior = .aspectFit) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-
+        
         //// Resize to Target Frame
         context.saveGState()
         let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 32, height: 32), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         context.scaleBy(x: resizedFrame.width / 32, y: resizedFrame.height / 32)
+
 
         //// Color Declarations
         let strokeColor = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
@@ -136,6 +147,7 @@ public class CustomIcons: NSObject {
         //// Clip Rectangle
         let rectanglePath = UIBezierPath(rect: CGRect(x: 2.03, y: 2, width: 27.35, height: 28))
         rectanglePath.addClip()
+
 
         //// Bezier Drawing
         let bezierPath = UIBezierPath()
@@ -152,6 +164,7 @@ public class CustomIcons: NSObject {
         bezierPath.lineCapStyle = .round
         bezierPath.lineJoinStyle = .round
         bezierPath.stroke()
+
 
         //// Bezier 2 Drawing
         let bezier2Path = UIBezierPath()
@@ -181,6 +194,7 @@ public class CustomIcons: NSObject {
         bezier2Path.lineJoinStyle = .round
         bezier2Path.stroke()
 
+
         //// Bezier 3 Drawing
         let bezier3Path = UIBezierPath()
         bezier3Path.move(to: CGPoint(x: 23.13, y: 25.56))
@@ -201,9 +215,170 @@ public class CustomIcons: NSObject {
         bezier3Path.lineJoinStyle = .round
         bezier3Path.stroke()
 
+
         context.endTransparencyLayer()
         context.restoreGState()
+        
+        context.restoreGState()
 
+    }
+
+    @objc dynamic public class func drawIconCheck(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 32, height: 32), resizing: ResizingBehavior = .aspectFit) {
+        //// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+        
+        //// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 32, height: 32), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 32, y: resizedFrame.height / 32)
+
+
+        //// Color Declarations
+        let strokeColor = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
+        let fillColor = UIColor(red: 0.067, green: 0.133, blue: 0.302, alpha: 1.000)
+
+        //// Bezier Drawing
+        let bezierPath = UIBezierPath()
+        bezierPath.move(to: CGPoint(x: 28.6, y: 7.52))
+        bezierPath.addCurve(to: CGPoint(x: 28.2, y: 8.52), controlPoint1: CGPoint(x: 28.6, y: 7.82), controlPoint2: CGPoint(x: 28.5, y: 8.22))
+        bezierPath.addLine(to: CGPoint(x: 11.8, y: 27.42))
+        bezierPath.addCurve(to: CGPoint(x: 10.6, y: 27.92), controlPoint1: CGPoint(x: 11.5, y: 27.72), controlPoint2: CGPoint(x: 11.1, y: 27.92))
+        bezierPath.addCurve(to: CGPoint(x: 9.6, y: 27.52), controlPoint1: CGPoint(x: 10.2, y: 27.92), controlPoint2: CGPoint(x: 9.9, y: 27.82))
+        bezierPath.addLine(to: CGPoint(x: 2.5, y: 21.32))
+        bezierPath.addCurve(to: CGPoint(x: 2, y: 20.22), controlPoint1: CGPoint(x: 2.2, y: 21.02), controlPoint2: CGPoint(x: 2, y: 20.62))
+        bezierPath.addCurve(to: CGPoint(x: 2.4, y: 19.22), controlPoint1: CGPoint(x: 2, y: 19.82), controlPoint2: CGPoint(x: 2.1, y: 19.52))
+        bezierPath.addCurve(to: CGPoint(x: 4.5, y: 19.12), controlPoint1: CGPoint(x: 3, y: 18.62), controlPoint2: CGPoint(x: 3.9, y: 18.52))
+        bezierPath.addLine(to: CGPoint(x: 10.5, y: 24.32))
+        bezierPath.addLine(to: CGPoint(x: 25.9, y: 6.52))
+        bezierPath.addCurve(to: CGPoint(x: 28, y: 6.32), controlPoint1: CGPoint(x: 26.5, y: 5.92), controlPoint2: CGPoint(x: 27.4, y: 5.82))
+        bezierPath.addCurve(to: CGPoint(x: 28.6, y: 7.52), controlPoint1: CGPoint(x: 28.4, y: 6.72), controlPoint2: CGPoint(x: 28.6, y: 7.12))
+        bezierPath.close()
+        fillColor.setFill()
+        bezierPath.fill()
+        strokeColor.setStroke()
+        bezierPath.lineWidth = 2
+        bezierPath.lineCapStyle = .round
+        bezierPath.lineJoinStyle = .round
+        bezierPath.stroke()
+        
+        context.restoreGState()
+
+    }
+
+    @objc dynamic public class func drawIconClose(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 32, height: 32), resizing: ResizingBehavior = .aspectFit) {
+        //// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+        
+        //// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 32, height: 32), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 32, y: resizedFrame.height / 32)
+
+
+        //// Color Declarations
+        let strokeColor = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
+        let fillColor2 = UIColor(red: 0.094, green: 0.137, blue: 0.298, alpha: 1.000)
+
+        //// Bezier Drawing
+        let bezierPath = UIBezierPath()
+        bezierPath.move(to: CGPoint(x: 28.14, y: 3.56))
+        bezierPath.addCurve(to: CGPoint(x: 28.14, y: 6.19), controlPoint1: CGPoint(x: 28.89, y: 4.31), controlPoint2: CGPoint(x: 28.89, y: 5.44))
+        bezierPath.addLine(to: CGPoint(x: 18.64, y: 15.94))
+        bezierPath.addLine(to: CGPoint(x: 28.52, y: 25.69))
+        bezierPath.addCurve(to: CGPoint(x: 28.52, y: 28.31), controlPoint1: CGPoint(x: 29.27, y: 26.44), controlPoint2: CGPoint(x: 29.27, y: 27.56))
+        bezierPath.addCurve(to: CGPoint(x: 25.89, y: 28.31), controlPoint1: CGPoint(x: 27.77, y: 29.06), controlPoint2: CGPoint(x: 26.64, y: 29.06))
+        bezierPath.addLine(to: CGPoint(x: 16.02, y: 18.56))
+        bezierPath.addLine(to: CGPoint(x: 6.27, y: 28.44))
+        bezierPath.addCurve(to: CGPoint(x: 3.64, y: 28.44), controlPoint1: CGPoint(x: 5.52, y: 29.19), controlPoint2: CGPoint(x: 4.39, y: 29.19))
+        bezierPath.addCurve(to: CGPoint(x: 3.64, y: 25.81), controlPoint1: CGPoint(x: 2.89, y: 27.69), controlPoint2: CGPoint(x: 2.89, y: 26.56))
+        bezierPath.addLine(to: CGPoint(x: 13.39, y: 15.94))
+        bezierPath.addLine(to: CGPoint(x: 3.52, y: 6.31))
+        bezierPath.addCurve(to: CGPoint(x: 3.52, y: 3.69), controlPoint1: CGPoint(x: 2.89, y: 5.56), controlPoint2: CGPoint(x: 2.77, y: 4.44))
+        bezierPath.addCurve(to: CGPoint(x: 6.14, y: 3.69), controlPoint1: CGPoint(x: 4.27, y: 2.94), controlPoint2: CGPoint(x: 5.39, y: 2.94))
+        bezierPath.addLine(to: CGPoint(x: 15.89, y: 13.31))
+        bezierPath.addLine(to: CGPoint(x: 25.52, y: 3.56))
+        bezierPath.addCurve(to: CGPoint(x: 28.14, y: 3.56), controlPoint1: CGPoint(x: 26.27, y: 2.81), controlPoint2: CGPoint(x: 27.39, y: 2.81))
+        bezierPath.close()
+        fillColor2.setFill()
+        bezierPath.fill()
+        strokeColor.setStroke()
+        bezierPath.lineWidth = 2
+        bezierPath.lineCapStyle = .round
+        bezierPath.lineJoinStyle = .round
+        bezierPath.stroke()
+        
+        context.restoreGState()
+
+    }
+
+    @objc dynamic public class func drawIconEdit(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 32, height: 32), resizing: ResizingBehavior = .aspectFit) {
+        //// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+        
+        //// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 32, height: 32), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 32, y: resizedFrame.height / 32)
+
+
+        //// Color Declarations
+        let fillColor = UIColor(red: 0.067, green: 0.133, blue: 0.302, alpha: 1.000)
+        let strokeColor2 = UIColor(red: 0.067, green: 0.133, blue: 0.302, alpha: 1.000)
+
+        //// iconEdit
+        context.saveGState()
+        context.beginTransparencyLayer(auxiliaryInfo: nil)
+
+        //// Clip Rectangle
+        let rectanglePath = UIBezierPath(rect: CGRect(x: 3, y: 1, width: 26.8, height: 28.7))
+        rectanglePath.addClip()
+
+
+        //// Bezier Drawing
+        let bezierPath = UIBezierPath()
+        bezierPath.move(to: CGPoint(x: 27.5, y: 10.4))
+        bezierPath.addLine(to: CGPoint(x: 25.3, y: 12.8))
+        bezierPath.addCurve(to: CGPoint(x: 21.7, y: 8.4), controlPoint1: CGPoint(x: 24.6, y: 11.6), controlPoint2: CGPoint(x: 23.5, y: 9.9))
+        bezierPath.addCurve(to: CGPoint(x: 18, y: 6), controlPoint1: CGPoint(x: 20.4, y: 7.2), controlPoint2: CGPoint(x: 19.1, y: 6.5))
+        bezierPath.addLine(to: CGPoint(x: 20.1, y: 3.7))
+        bezierPath.addCurve(to: CGPoint(x: 27.2, y: 3.4), controlPoint1: CGPoint(x: 22, y: 1.7), controlPoint2: CGPoint(x: 25.1, y: 1.5))
+        bezierPath.addCurve(to: CGPoint(x: 27.5, y: 10.4), controlPoint1: CGPoint(x: 29.3, y: 5.2), controlPoint2: CGPoint(x: 29.4, y: 8.4))
+        bezierPath.close()
+        fillColor.setFill()
+        bezierPath.fill()
+        strokeColor2.setStroke()
+        bezierPath.lineWidth = 2
+        bezierPath.lineJoinStyle = .round
+        bezierPath.stroke()
+
+
+        //// Bezier 2 Drawing
+        let bezier2Path = UIBezierPath()
+        bezier2Path.move(to: CGPoint(x: 25.3, y: 12.8))
+        bezier2Path.addLine(to: CGPoint(x: 14.5, y: 24.7))
+        bezier2Path.addCurve(to: CGPoint(x: 14.1, y: 25.1), controlPoint1: CGPoint(x: 14.4, y: 24.8), controlPoint2: CGPoint(x: 14.3, y: 24.9))
+        bezier2Path.addCurve(to: CGPoint(x: 12.2, y: 26.5), controlPoint1: CGPoint(x: 13.9, y: 25.3), controlPoint2: CGPoint(x: 13.3, y: 25.8))
+        bezier2Path.addCurve(to: CGPoint(x: 10.2, y: 27.5), controlPoint1: CGPoint(x: 12, y: 26.6), controlPoint2: CGPoint(x: 11.1, y: 27.1))
+        bezier2Path.addCurve(to: CGPoint(x: 4.1, y: 28.8), controlPoint1: CGPoint(x: 7.7, y: 28.5), controlPoint2: CGPoint(x: 5.5, y: 28.7))
+        bezier2Path.addCurve(to: CGPoint(x: 4.7, y: 22.7), controlPoint1: CGPoint(x: 4, y: 27.5), controlPoint2: CGPoint(x: 3.9, y: 25.2))
+        bezier2Path.addCurve(to: CGPoint(x: 6.8, y: 18.5), controlPoint1: CGPoint(x: 5, y: 21.8), controlPoint2: CGPoint(x: 5.5, y: 20.1))
+        bezier2Path.addCurve(to: CGPoint(x: 7.1, y: 17.9), controlPoint1: CGPoint(x: 6.9, y: 18.1), controlPoint2: CGPoint(x: 7, y: 18))
+        bezier2Path.addLine(to: CGPoint(x: 18, y: 6))
+        bezier2Path.addCurve(to: CGPoint(x: 21.7, y: 8.4), controlPoint1: CGPoint(x: 19.1, y: 6.5), controlPoint2: CGPoint(x: 20.4, y: 7.3))
+        bezier2Path.addCurve(to: CGPoint(x: 25.3, y: 12.8), controlPoint1: CGPoint(x: 23.5, y: 10), controlPoint2: CGPoint(x: 24.6, y: 11.6))
+        bezier2Path.close()
+        strokeColor2.setStroke()
+        bezier2Path.lineWidth = 2
+        bezier2Path.lineJoinStyle = .round
+        bezier2Path.stroke()
+
+
+        context.endTransparencyLayer()
+        context.restoreGState()
+        
         context.restoreGState()
 
     }
@@ -216,7 +391,7 @@ public class CustomIcons: NSObject {
         }
 
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 35, height: 35), false, 0)
-        CustomIcons.drawIconAdd()
+            CustomIcons.drawIconAdd()
 
         Cache.imageOfIconAdd = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
@@ -230,7 +405,7 @@ public class CustomIcons: NSObject {
         }
 
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 32, height: 32), false, 0)
-        CustomIcons.drawIconArrow()
+            CustomIcons.drawIconArrow()
 
         Cache.imageOfIconArrow = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
@@ -244,7 +419,7 @@ public class CustomIcons: NSObject {
         }
 
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 32, height: 32), false, 0)
-        CustomIcons.drawIconCalendar()
+            CustomIcons.drawIconCalendar()
 
         Cache.imageOfIconCalendar = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
@@ -252,37 +427,112 @@ public class CustomIcons: NSObject {
         return Cache.imageOfIconCalendar!
     }
 
+    @objc dynamic public class var imageOfIconCheck: UIImage {
+        if Cache.imageOfIconCheck != nil {
+            return Cache.imageOfIconCheck!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: 32, height: 32), false, 0)
+            CustomIcons.drawIconCheck()
+
+        Cache.imageOfIconCheck = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfIconCheck!
+    }
+
+    @objc dynamic public class var imageOfIconClose: UIImage {
+        if Cache.imageOfIconClose != nil {
+            return Cache.imageOfIconClose!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: 32, height: 32), false, 0)
+            CustomIcons.drawIconClose()
+
+        Cache.imageOfIconClose = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfIconClose!
+    }
+
+    @objc dynamic public class var imageOfIconEdit: UIImage {
+        if Cache.imageOfIconEdit != nil {
+            return Cache.imageOfIconEdit!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: 32, height: 32), false, 0)
+            CustomIcons.drawIconEdit()
+
+        Cache.imageOfIconEdit = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfIconEdit!
+    }
+
     //// Customization Infrastructure
 
-    @IBOutlet dynamic var iconAddTargets: [AnyObject]! {
+    @objc @IBOutlet dynamic var iconAddTargets: [AnyObject]! {
         get { return Cache.iconAddTargets }
         set {
             Cache.iconAddTargets = newValue
             for target: AnyObject in newValue {
-                _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconAdd)
+                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconAdd)
             }
         }
     }
 
-    @IBOutlet dynamic var iconArrowTargets: [AnyObject]! {
+    @objc @IBOutlet dynamic var iconArrowTargets: [AnyObject]! {
         get { return Cache.iconArrowTargets }
         set {
             Cache.iconArrowTargets = newValue
             for target: AnyObject in newValue {
-                _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconArrow)
+                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconArrow)
             }
         }
     }
 
-    @IBOutlet dynamic var iconCalendarTargets: [AnyObject]! {
+    @objc @IBOutlet dynamic var iconCalendarTargets: [AnyObject]! {
         get { return Cache.iconCalendarTargets }
         set {
             Cache.iconCalendarTargets = newValue
             for target: AnyObject in newValue {
-                _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconCalendar)
+                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconCalendar)
             }
         }
     }
+
+    @objc @IBOutlet dynamic var iconCheckTargets: [AnyObject]! {
+        get { return Cache.iconCheckTargets }
+        set {
+            Cache.iconCheckTargets = newValue
+            for target: AnyObject in newValue {
+                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconCheck)
+            }
+        }
+    }
+
+    @objc @IBOutlet dynamic var iconCloseTargets: [AnyObject]! {
+        get { return Cache.iconCloseTargets }
+        set {
+            Cache.iconCloseTargets = newValue
+            for target: AnyObject in newValue {
+                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconClose)
+            }
+        }
+    }
+
+    @objc @IBOutlet dynamic var iconEditTargets: [AnyObject]! {
+        get { return Cache.iconEditTargets }
+        set {
+            Cache.iconEditTargets = newValue
+            for target: AnyObject in newValue {
+                let _ = target.perform(NSSelectorFromString("setImage:"), with: CustomIcons.imageOfIconEdit)
+            }
+        }
+    }
+
+
+
 
     @objc(CustomIconsResizingBehavior)
     public enum ResizingBehavior: Int {
@@ -301,17 +551,17 @@ public class CustomIcons: NSObject {
             scales.height = abs(target.height / rect.height)
 
             switch self {
-            case .aspectFit:
-                scales.width = min(scales.width, scales.height)
-                scales.height = scales.width
-            case .aspectFill:
-                scales.width = max(scales.width, scales.height)
-                scales.height = scales.width
-            case .stretch:
-                break
-            case .center:
-                scales.width = 1
-                scales.height = 1
+                case .aspectFit:
+                    scales.width = min(scales.width, scales.height)
+                    scales.height = scales.width
+                case .aspectFill:
+                    scales.width = max(scales.width, scales.height)
+                    scales.height = scales.width
+                case .stretch:
+                    break
+                case .center:
+                    scales.width = 1
+                    scales.height = 1
             }
 
             var result = rect.standardized
