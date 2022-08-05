@@ -62,3 +62,38 @@ override func viewDidLoad() {
     label.font = .heading1
 }
 ```
+
+## Icons
+Custom icons for the application.
+
+**Available icons:**
+<br />
+<img src="images/icon_add.png" /> 
+
+- `.applicationIconAdd`
+- `.applicationIconAddActive`
+- `.applicationIconAddDisabled`
+- `.applicationIconAddKO`
+- `.applicationIconAddKOActive`
+- `.applicationIconAddKODisabled`
+
+
+<img src="images/icon_arrow.png" />
+
+- `.applicationIconArrow`
+- `.applicationIconArrowActive`
+- `.applicationIconArrowDisabled`
+- `.applicationIconArrowKO`
+- `.applicationIconArrowKOActive`
+- `.applicationIconArrowKODisabled`
+
+
+<img src="images/icon_calendar.png" />
+
+- `.applicationIconCalendar`
+- `.applicationIconCalendarActive`
+- `.applicationIconCalendarDisabled`
+- `.applicationIconCalendarKO`
+- `.applicationIconCalendarKOActive`
+- `.applicationIconCalendarKODisabled`
+ 
