@@ -22,6 +22,7 @@ With the help of autocompletion all colors can be found quite easily and can be 
 - <img src="images/Cultured.png" width="35" /> `.applicationCultured`              with HEX of `#F6F4F3`
 - <img src="images/MaizeCrayola.png" width="35" /> `.applicationMaizeCrayola`       with HEX of `#F2C864`
 - <img src="images/FrenchBlueSky.png" width="35" /> `.applicationFrenchBlueSky`       with HEX of `#8AB6E9`
+- <img src="images/DefaultGray.png" width="35" /> `.applicationDefaultGray`       with HEX of `#C4C4C4`
 
 
 **Usage:**

@@ -23,4 +23,5 @@ public extension UIColor {
     static let applicationFrenchBlueSky = UIColor(red: 138/255, green: 182/255, blue: 233/255, alpha: 1)
     static let applicationRhythm = UIColor(red: 104/255, green: 112/255, blue: 134/255, alpha: 1)
     static let applicationCultured = UIColor(red: 246/255, green: 244/255, blue: 243/255, alpha: 1)
+    static let applicationDefaultGray = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1)
 }
