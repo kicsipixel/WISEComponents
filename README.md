@@ -1,9 +1,9 @@
 # WISECities UIKit Components
 
 **Abstract:** Documentation of custom UIKit reusable components for WISECities mobile app.
- 
- **Version:** 1.0
- 
+
+**Version:** 1.0
+
 **IMPORTANT:** You are not allowed to copy any portion of this documentation or redistribute with or without modifications.
 
 ## Colors
@@ -29,7 +29,7 @@ With the help of autocompletion all colors can be found quite easily and can be 
 import WISEComponents
 
 override func viewDidLoad() {
-    view.backgroundColor = .applicationOxfordBlue
+view.backgroundColor = .applicationOxfordBlue
 }
 ```
 
@@ -54,12 +54,12 @@ Custom font for the application is `Inter`.
 import WISEComponents
 
 init() {
-    WISEComponents.registerFonts()
+WISEComponents.registerFonts()
 }
 
 override func viewDidLoad() {
-    let label = UILabel()
-    label.font = .heading1
+let label = UILabel()
+label.font = .heading1
 }
 ```
 
@@ -97,8 +97,8 @@ Custom icons for the application.
 - `.applicationIconCalendarKO`
 - `.applicationIconCalendarKOActive`
 - `.applicationIconCalendarKODisabled`
- 
- <img src="images/icon_check.png" />
+
+<img src="images/icon_check.png" />
 
 - `.applicationIconCheck`
 - `.applicationIconCheckActive`
@@ -107,8 +107,8 @@ Custom icons for the application.
 - `.applicationIconCheckKOActive`
 - `.applicationIconCheckKODisabled`
 
- 
- <img src="images/icon_close.png" />
+
+<img src="images/icon_close.png" />
 
 - `.applicationIconClose`
 - `.applicationIconCloseActive`
@@ -116,8 +116,8 @@ Custom icons for the application.
 - `.applicationIconCloseKO`
 - `.applicationIconCloseKOActive`
 - `.applicationIconCloseKODisabled`
- 
- <img src="images/icon_edit.png" />
+
+<img src="images/icon_edit.png" />
 
 - `.applicationIconEdit`
 - `.applicationIconEditActive`
@@ -125,7 +125,42 @@ Custom icons for the application.
 - `.applicationIconEditKO`
 - `.applicationIconEditKOActive`
 - `.applicationIconEditKODisabled`
- 
+
+<img src="images/icon_flag.png" />
+
+- `.applicationIconFlag`
+- `.applicationIconFlagActive`
+- `.applicationIconFlagDisabled`
+- `.applicationIconFlagKO`
+- `.applicationIconFlagKOActive`
+- `.applicationIconFlagKODisabled`
+
+<img src="images/icon_location.png" />
+
+- `.applicationIconFlag`
+- `.applicationIconFlagActive`
+- `.applicationIconFlagDisabled`
+- `.applicationIconFlagKO`
+- `.applicationIconFlagKOActive`
+- `.applicationIconFlagKODisabled`
+
+<img src="images/icon_search.png" />
+
+- `.applicationIconSearch`
+- `.applicationIconSearchActive`
+- `.applicationIconSearchDisabled`
+- `.applicationIconSearchKO`
+- `.applicationIconSearchKOActive`
+- `.applicationIconSearchKODisabled`
+
+<img src="images/icon_warning.png" />
+
+- `.applicationIconWarning`
+- `.applicationIconWarningActive`
+- `.applicationIconWarningDisabled`
+- `.applicationIconWarningKO`
+- `.applicationIconWarningKOActive`
+- `.applicationIconWarningKODisabled`
 
 **Usage:**
 ```swift
