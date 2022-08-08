@@ -28,13 +28,13 @@ public class WISEDefaultImageBackground: UIView {
     
     let imageType: WISEImageType
     
-    required init(frame: CGRect, imageType: WISEImageType) {
+    public required init(frame: CGRect, imageType: WISEImageType) {
         self.imageType = imageType
         super.init(frame: frame)
         self.backgroundColor = .clear
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
